@@ -1,6 +1,6 @@
 import {Restaurant} from './restaurant/restaurant.model'
 
-export class RestaurantService{
+export class RestaurantsService{
  
       Rests : Restaurant[] = [
         {
