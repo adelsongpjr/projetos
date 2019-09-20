@@ -11,7 +11,7 @@ export class OrderItensComponent implements OnInit {
 
   @Output() increaseQty = new EventEmitter<CartItem>()
   @Output() decreaseQty = new EventEmitter<CartItem>()
-  @Output() remove = new EventEmitter<CartItem>()
+  @Output() remove      = new EventEmitter<CartItem>()
 
   constructor() { }
 
@@ -28,5 +28,6 @@ export class OrderItensComponent implements OnInit {
 
   EmitRemove(item: CartItem){
     this.remove.emit(item)
+    console.log(this.items.length)
   }
 }

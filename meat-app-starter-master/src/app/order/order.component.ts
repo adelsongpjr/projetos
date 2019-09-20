@@ -15,12 +15,12 @@ export class OrderComponent implements OnInit {
     {label : 'Refeição', value: 'REF'}
   ]
 
-  constructor(private orderService: OrderService) { }
+  constructor(public orderService: OrderService) { }
 
   ngOnInit() {
   }
 
-  cartItems(): CartItem[]{
+  cartItems(): CartItem[] {
     return this.orderService.cartItems()
   }
 
